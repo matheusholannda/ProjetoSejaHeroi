@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import './Login.css';
 import Axios from 'axios';
+import logo from '../../assets/images/sejaheroi.png'
+import './Login.css';
 
 export default class App extends Component {
   constructor() {
@@ -22,14 +23,14 @@ export default class App extends Component {
   efetuaLogin(event){
     event.preventDefault();
 
-    Axios.post('http://192.168.3.129:5000/api/login', {
+    Axios.post('', {
       email : this.state.email,
       senha : this.state.senha
     })
     .then(data => {
       console.log(data);
-      localStorage.setItem("user-sejaheroi", data.data.token);
-      this.props.history.push('/menu')
+      localStorage.setItem("", data.data.token);
+      this.props.history.push('/home')
     })
     .catch(erro=>{
       console.log(erro);
@@ -45,9 +46,9 @@ export default class App extends Component {
         <div className="opac">
           <div className="inputboxshadow">
             <div className="circulo">
-              {/* <img
+              <img
                 src={logo}
-                alt="Logo Seja Herói" /> */}
+                alt="Logo Seja Herói" />
             </div>
             <form onSubmit={this.efetuaLogin.bind(this)}>
             <div className="inputs">
