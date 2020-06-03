@@ -14,16 +14,23 @@
 .perfil-container header{
     display: flex;
     align-items: center;
+    background: #fff3e0;
+    height: 100px;
+    width: 1120px;
+    padding: 0 20px 0 20px;
+    border-radius: 8px;
+    margin-bottom: 60px;
 }
 
 .perfil-container header h3{
     font-size: 20px;
-    margin-left: 24px;
+    margin-left: 30px;
     color: #424242;
 }
 
 .perfil-container header img{
-    height: 64px;
+    height: 60px;
+    width: 190px;
 }
 
 .perfil-container header a {
@@ -38,6 +45,8 @@
     background-color: #ff9800;
     text-decoration: none;
     border-radius: 5px;
+    transition: border-color 0.3s;
+    font-weight: 400;  
 }
 
 .perfil-container header a:hover {
@@ -48,21 +57,10 @@
 .perfil-container header button{
     height: 60px;
     width: 60px;
-    border-radius: 5px;
-    border: 1px solid #ffe0b2;
-    background-color: #ff9800;
     margin-left: 16px;
-    transition: border-color 0.2s;
- }
-
- .perfil-container header button:hover{
-     border-color: #ff9800;
-     background-color: #f57c00;
  }
 
  .perfil-container h1{
-     margin-top: 80px;
-     margin-bottom: 24px;
      color: #424242;
  }
 
@@ -105,4 +103,11 @@
      color: #737380;
      line-height: 21px;
      font-size: 16px;
+ }
+
+ .content {
+    background: #fff3e0;
+    width: 1120px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 8px;
  }
