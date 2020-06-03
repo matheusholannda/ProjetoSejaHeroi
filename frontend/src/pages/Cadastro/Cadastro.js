@@ -25,11 +25,12 @@ export default function NovoCaso() {
                     Authorization: ongId,
                 }
             })
-
+            
+            alert('Caso cadastrado com sucesso!')
             history.push('/menu');
 
         } catch (error) {
-            alert('Erro ao cadastrar caso, tente novamente')
+            alert('Erro ao cadastrar caso, tente novamente!')
         }
     }
 
@@ -60,7 +61,7 @@ export default function NovoCaso() {
                         onChange={event => setDescricao(event.target.value)}
                     />
                     <input
-                        placeholder="Valor em reais"
+                        placeholder="Valor"
                         value={valor}
                         onChange={event => setValor(event.target.value)}
                     />

@@ -1,15 +1,17 @@
-.novo-caso-container{
+.cadastro-container{
     width: 100%;
     max-width: 1120px;
     height: 100vh;
     margin: 0 auto;
 
     display: flex;
+    /* vertical */
     align-items: center;
+    /* horizontal */
     justify-content: center;
 }
 
-.novo-caso-container .content{
+.cadastro-container .content{
     width: 100%;
     padding: 75px;
     background: #fff3e0;
@@ -21,30 +23,30 @@
     align-items: center;
 }
 
-.novo-caso-container .content section{
+.cadastro-container .content section{
     width: 100%;
     max-width: 380px;
 }
 
-.novo-caso-container .content section img{
+.cadastro-container .content section img{
     height: 110px;
     width: 325px;
 }
 
-.novo-caso-container .content section h1{
+.cadastro-container .content section h1{
     margin: 50px 0 32px;
     font-size: 32px;
     color: #424242;
 }
 
-.novo-caso-container .content section p{
+.cadastro-container .content section p{
     font-size: 18px;
     color: #737380;
     line-height: 32px;
     font-style: italic;
 }
 
-.novo-caso-container .content form {
+.cadastro-container .content form {
     width: 100%;
     max-width: 450px;
     height: 318px;
@@ -53,33 +55,37 @@
     align-items: center;
 }
 
-.novo-caso-container .content form input,
-.novo-caso-container .content form textarea{
+.cadastro-container .content form input,
+.cadastro-container .content form textarea{
     width: 100%;
     margin-bottom: 1.5em;
-    padding: 7px 15px;
+    padding: 0 15px;
     border-radius: 5px;
     border: 1px solid #ffe0b2;
     box-shadow: 4px 4px 15px #bdbdbd ;
 }
 
-.novo-caso-container .content form input:focus,
-.novo-caso-container .content form textarea:focus{
+.cadastro-container .content form input:focus,
+.cadastro-container .content form textarea:focus{
     border: 1px solid #ffcc80;
 }
 
-.novo-caso-container .content form input{
+.cadastro-container .content form input{
     height: 15%;
 }
 
-.novo-caso-container .content form textarea{
+.cadastro-container .content form textarea{
     resize: none;
     height: 40%;
 }
 
-.novo-caso-container .content form button{
+.cadastro-container .content form button{
     width: 30%;
     height: 65px;
+}
+
+.input-group {
+    display: flex;
 }
 
 .back-link {

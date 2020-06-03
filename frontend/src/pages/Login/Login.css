@@ -90,7 +90,7 @@
     align-items: center;
     flex-direction: column;
   }
-  
+
   #input::placeholder {
     color: #212121;
   }
@@ -115,6 +115,7 @@
     border-radius: 0.5em;
     border: none;
     font-size: 1.5em;
+    cursor: pointer;
   }
   
   .email {
@@ -139,7 +140,7 @@
     height: 100%;
     width: 85%;
     padding-left: 10px;
-    color: black;
+    color: #FFFFFF;
     opacity: 1;
   }
   
@@ -147,7 +148,7 @@
     height: 100%;
     width: 85%;
     padding-left: 10px;    
-    color: black;
+    color: #FFFFFF;
     opacity: 1;
   }
   

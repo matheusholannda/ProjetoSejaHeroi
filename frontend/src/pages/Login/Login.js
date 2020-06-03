@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import Axios from 'axios';
-import Seta from 'react-ionicons/lib/IosArrowForward'
 import logo from '../../assets/images/sejaheroi.png'
 import './Login.css';
 
@@ -75,7 +74,6 @@ export default class App extends Component {
               </div>
               <div className="btn">
                 <Link className="" to="/registrar">
-                  <Seta color="#FFFFFF"/>
                   Não tenho cadastro.
                 </Link>
                 <input
