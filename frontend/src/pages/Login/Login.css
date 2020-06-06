@@ -56,7 +56,7 @@
     justify-content:space-around;
     align-items: center;
     flex-direction: column;
-    height: 12em;
+    height: 11em;
   }
   
   .inputs .hr{
@@ -86,7 +86,7 @@
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content:space-between;
+    justify-content:center;
     align-items: center;
     flex-direction: column;
   }

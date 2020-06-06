@@ -10,6 +10,7 @@ export default function NovoCaso() {
     const [titulo, setTitulo] = useState('');
     const [descricao, setDescricao] = useState('');
     const [valor, setValor] = useState('');
+    const [whatsapp, setWhatsapp] = useState('');
     const history = useHistory();
     const ongId = localStorage.getItem('ongId');
     const ongNome = localStorage.getItem('ongNome');
@@ -17,7 +18,7 @@ export default function NovoCaso() {
     async function cadastrarNovoCaso(event) {
         event.preventDefault();
 
-        const data = { titulo, descricao, valor }
+        const data = { titulo, descricao, valor, whatsapp, }
 
         try {
             await api.post('casos', data, {
@@ -27,7 +28,7 @@ export default function NovoCaso() {
             })
             
             alert('Caso cadastrado com sucesso!')
-            history.push('/menu');
+            history.push('/perfil');
 
         } catch (error) {
             alert('Erro ao cadastrar caso, tente novamente!')
@@ -43,7 +44,7 @@ export default function NovoCaso() {
                     <h1>Cadastrar novo caso</h1>
                     <p>Descreva o caso especificadamente para um herói te ajudar a solucioná-lo.</p>
 
-                    <Link className="back-link" to="/menu">
+                    <Link className="back-link" to="/perfil">
                         <Seta className="seta" color="#f57c00"/>
                         Voltar ao início
                     </Link>
@@ -64,6 +65,11 @@ export default function NovoCaso() {
                         placeholder="Valor"
                         value={valor}
                         onChange={event => setValor(event.target.value)}
+                    />
+                    <input
+                        placeholder="Telefone para contato"
+                        value={whatsapp}
+                        onChange={event => setWhatsapp(event.target.value)}
                     />
 
                     <button className="button" type="submit">Cadastrar</button>

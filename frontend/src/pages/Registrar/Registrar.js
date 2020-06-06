@@ -5,19 +5,17 @@ import './Registrar.css';
 import api from "../../services/api";
 import logo from '../../assets/images/sejaheroi.png';
 
-export default function NovoCaso() {
+export default function Registrar() {
 
     const [nome, setNome] = useState('');
     const [email, setEmail] = useState('');
     const [whatsapp, setWhatsapp] = useState('');
-    const [cidade, setCidade] = useState('');
-    const [uf, setUf] = useState('');
     const history = useHistory();
 
-    async function cadastroUsuario(event) {
+    async function realizaRegistro(event) {
         event.preventDefault();
 
-        const data = { nome, email, whatsapp, cidade, uf };
+        const data = { nome, email, whatsapp };
 
         try {
             const response = await api.post('ongs', data);
@@ -44,7 +42,7 @@ export default function NovoCaso() {
                     </Link>
                 </section>
 
-                <form onSubmit={cadastroUsuario}>
+                <form onSubmit={realizaRegistro}>
                     <input placeholder="Nome"
                         value={nome}
                         onChange={event => setNome(event.target.value)}
